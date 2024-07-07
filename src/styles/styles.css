@@ -1,0 +1,100 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-family: "Ga Maamli", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.App{
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #405D72;
+}
+
+.slot-machine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* background-color: red; */
+  margin-top: 50px;
+  font-family: "Roboto", sans-serif;
+}
+
+.win-message{
+  /* font-size: bold; */
+  font-weight: 600;
+  font-family: "Ga Maamli", sans-serif;
+  color: #77E4C8;
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+.reels {
+  display: flex;
+}
+
+.reel {
+  font-size: 3rem;
+  margin: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  transition: transform 2s ease-in-out;
+}
+
+.reel.spin {
+  animation: spinningReel 2s infinite;
+}
+.winAnimation {
+  animation: scaleSymbol 3s infinite;
+}
+
+.spin-button, .stop-button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #478CCF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.spin-button:hover, .stop-button:hover {
+  background-color: #0056b3;
+}
+
+.spin-button:disabled, .stop-button:disabled {
+  background-color: #577B8D;
+}
+@keyframes spinningReel {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(720deg);
+  }
+}
+
+@keyframes scaleSymbol {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
