@@ -10,6 +10,12 @@ This is a simple Slot Machine game implemented in React, Typescript and basic CS
 - **Winning Condition**: Displays a win message and a animation when all reels show the same symbol.
 - **Animation**: Provides simple spinning animation for reels and win animation when winning.
 
+
+## Live Demo Link 
+
+- https://slot-machine-type.netlify.app
+
+
 ## How to Run
 
 1. Clone the repository:
