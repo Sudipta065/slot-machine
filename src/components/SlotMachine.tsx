@@ -53,7 +53,7 @@ const SlotMachine: React.FC = () => {
 
   return (
     <div className="slot-machine">
-      {true && <div className="win-message">You won the Jackpot!</div>}
+      {winning && <div className="win-message">You won the Jackpot!</div>}
       <div className="reels">
         {reels.map((symbol, index) => (
           <div
